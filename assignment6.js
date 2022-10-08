@@ -1,6 +1,15 @@
 
     const prompt = require('prompt-sync')();
-   var person = prompt('Enter User Name');
+   let n1 = prompt('Enter First Number');
+   let n2 = prompt('Enter Second Number');
 
-   console.log(`\t ${person} \n`);
+var regp = /[^0-9.-]+/g;
+
+console.log(parseFloat(n1.replace(regp, '')) +       parseFloat(n2.replace(regp, '')));
+
+console.log(parseFloat(n1.replace(regp, '')) -         parseFloat(n2.replace(regp, '')));
+
+console.log(parseFloat(n1.replace(regp, '')) *         parseFloat(n2.replace(regp, '')));
+
+console.log(parseFloat(n1.replace(regp, '')) /         parseFloat(n2.replace(regp, '')));
 
